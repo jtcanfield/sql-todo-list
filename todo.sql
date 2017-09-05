@@ -1,0 +1,8 @@
+CREATE TABLE todolist (
+  id SERIAL PRIMARY KEY,
+  title VARCHAR(255) NOT NULL,
+  details VARCHAR(1000) NULL,
+  priority INTEGER NOT NULL DEFAULT 1,
+  created_at TIMESTAMP NOT NULL,
+  completed_at TIMESTAMP NULL
+);
